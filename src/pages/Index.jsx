@@ -82,7 +82,7 @@ const Index = () => {
         <option value="Personal">Personal</option>
         <option value="Work">Work</option>
       </Select>
-      <Button leftIcon={<FaPlus />} colorScheme="blue" mt={4} onClick={editId ? handleUpdateTask : handleAddTask}>
+      <Button leftIcon={<FaPlus />} colorScheme="red" mt={4} onClick={editId ? handleUpdateTask : handleAddTask}>
         {editId ? "Update Task" : "Add Task"}
       </Button>
       <Select placeholder="Filter tasks" value={filter} onChange={(e) => setFilter(e.target.value)} mt={4}>
